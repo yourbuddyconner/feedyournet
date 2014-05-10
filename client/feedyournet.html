@@ -1,0 +1,28 @@
+<head>
+	<title>feedyournet</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="login">
+			{{> loginButtons}}
+		</div>
+		<div id="hello">
+			{{> displayInfo}}
+		</div>
+	</div>
+</body>
+
+<template name="displayInfo">
+	<h1>WHADDUP.</h1>
+	<p>Hello, your name is: {{name}}</p>
+	<p>Your email address is: {{email}}</p>
+	<h3>Your Facebook profile information is:</h3>
+	<p>Facebook ID: {{profileInfo.id}}</p>
+	<p>Name: {{profileInfo.name}}</p>
+	<p>Email: {{profileInfo.email}}</p>
+</template>
+
+<template name="displayFriends">
+	
+</template>
